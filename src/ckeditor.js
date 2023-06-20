@@ -44,7 +44,7 @@ import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 // import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
-// import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
+import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 // import { Style } from '@ckeditor/ckeditor5-style';
 // import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 
@@ -92,7 +92,7 @@ Editor.builtinPlugins = [
 	TodoList,
 	Highlight,
 	// SourceEditing,
-	// GeneralHtmlSupport,
+	GeneralHtmlSupport,
 	// Style,
 	// RemoveFormat
 ];
@@ -129,7 +129,8 @@ Editor.defaultConfig = {
 			'pageBreak',
 			// 'style',
 			// 'removeFormat',
-		]
+		],
+		shouldNotGroupWhenFull: true
 	},
 	language: 'en',
 	image: {
@@ -208,16 +209,16 @@ Editor.defaultConfig = {
 		offset: 1,
 		unit: 'em'
 	},
-	// htmlSupport: {
-	// 	allow: [
-	// 		{
-	// 			name: /.*/,
-	// 			attributes: true,
-	// 			classes: true,
-	// 			styles: true
-	// 		}
-	// 	]
-	// },
+	htmlSupport: {
+		allow: [
+			{
+				name: /.*/,
+				attributes: true,
+				classes: true,
+				styles: true
+			}
+		]
+	},
 	// style: {
 	// 	definitions: [
 	// 		{
