@@ -48,6 +48,8 @@ import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 import { SelectAll } from '@ckeditor/ckeditor5-select-all';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
+import { ImageInsert } from '@ckeditor/ckeditor5-image';
+import { AutoImage } from '@ckeditor/ckeditor5-image';
 
 
 class Editor extends ClassicEditor { }
@@ -96,7 +98,9 @@ Editor.builtinPlugins = [
 	RemoveFormat,
 	SelectAll,
 	PasteFromOffice,
-	FindAndReplace
+	FindAndReplace,
+	ImageInsert,
+	AutoImage
 ];
 
 // Editor configuration.
@@ -122,7 +126,7 @@ Editor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
-			'imageUpload',
+			'insertImage',
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
