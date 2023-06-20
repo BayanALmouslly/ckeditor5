@@ -47,6 +47,7 @@ import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 import { SelectAll } from '@ckeditor/ckeditor5-select-all';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
+import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 
 
 class Editor extends ClassicEditor { }
@@ -94,7 +95,8 @@ Editor.builtinPlugins = [
 	GeneralHtmlSupport,
 	RemoveFormat,
 	SelectAll,
-	PasteFromOffice
+	PasteFromOffice,
+	FindAndReplace
 ];
 
 // Editor configuration.
@@ -128,7 +130,8 @@ Editor.defaultConfig = {
 			'redo',
 			'pageBreak',
 			'removeFormat',
-			'selectAll'
+			'selectAll',
+			'findAndReplace'
 		],
 		shouldNotGroupWhenFull: true
 	},
