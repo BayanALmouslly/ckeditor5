@@ -50,7 +50,7 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 import { ImageInsert } from '@ckeditor/ckeditor5-image';
 import { AutoImage } from '@ckeditor/ckeditor5-image';
-
+import { TextPartLanguage } from '@ckeditor/ckeditor5-language';
 
 class Editor extends ClassicEditor { }
 
@@ -100,7 +100,8 @@ Editor.builtinPlugins = [
 	PasteFromOffice,
 	FindAndReplace,
 	ImageInsert,
-	AutoImage
+	AutoImage,
+	TextPartLanguage
 ];
 
 // Editor configuration.
@@ -120,7 +121,7 @@ Editor.defaultConfig = {
 			'alignment:left', 'alignment:right', 'alignment:center', 'alignment:justify',
 			'horizontalLine',
 			'|',
-			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
+			'fontSize', 'fontFamily','textPartLanguage', 'fontColor', 'fontBackgroundColor',
 			 'highlight',
 			'|',
 			'outdent',
