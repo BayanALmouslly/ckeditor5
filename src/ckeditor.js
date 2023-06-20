@@ -51,6 +51,8 @@ import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 import { ImageInsert } from '@ckeditor/ckeditor5-image';
 import { AutoImage } from '@ckeditor/ckeditor5-image';
 import { TextPartLanguage } from '@ckeditor/ckeditor5-language';
+import { SpecialCharacters, SpecialCharactersEssentials } from '@ckeditor/ckeditor5-special-characters';
+
 
 class Editor extends ClassicEditor { }
 
@@ -101,7 +103,9 @@ Editor.builtinPlugins = [
 	FindAndReplace,
 	ImageInsert,
 	AutoImage,
-	TextPartLanguage
+	TextPartLanguage,
+	SpecialCharactersEssentials,
+	SpecialCharacters
 ];
 
 // Editor configuration.
@@ -113,7 +117,7 @@ Editor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline', 'strikethrough',
-			 'code', 'subscript', 'superscript',
+			 'code', 'subscript', 'superscript','specialCharacters',
 			'link',
 			'bulletedList',
 			'numberedList',

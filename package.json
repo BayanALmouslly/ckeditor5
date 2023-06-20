@@ -50,6 +50,7 @@
     "@ckeditor/ckeditor5-paste-from-office": "^32.0.0",
     "@ckeditor/ckeditor5-remove-format": "^32.0.0",
     "@ckeditor/ckeditor5-select-all": "^32.0.0",
+    "@ckeditor/ckeditor5-special-characters": "^32.0.0",
     "@ckeditor/ckeditor5-upload": "^32.0.0"
   }
 }
