@@ -45,6 +45,8 @@
     "@ckeditor/ckeditor5-horizontal-line": "^32.0.0",
     "@ckeditor/ckeditor5-html-support": "^32.0.0",
     "@ckeditor/ckeditor5-page-break": "^32.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^32.0.0",
+    "@ckeditor/ckeditor5-select-all": "^32.0.0",
     "@ckeditor/ckeditor5-upload": "^32.0.0"
   }
 }

@@ -43,10 +43,9 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
-// import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
 import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
-// import { Style } from '@ckeditor/ckeditor5-style';
-// import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
+import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
+import { SelectAll } from '@ckeditor/ckeditor5-select-all';
 
 
 class Editor extends ClassicEditor { }
@@ -91,10 +90,9 @@ Editor.builtinPlugins = [
 	PageBreak,
 	TodoList,
 	Highlight,
-	// SourceEditing,
 	GeneralHtmlSupport,
-	// Style,
-	// RemoveFormat
+	RemoveFormat,
+	SelectAll
 ];
 
 // Editor configuration.
@@ -127,8 +125,8 @@ Editor.defaultConfig = {
 			'undo',
 			'redo',
 			'pageBreak',
-			// 'style',
-			// 'removeFormat',
+			'removeFormat',
+			'selectAll'
 		],
 		shouldNotGroupWhenFull: true
 	},
@@ -219,20 +217,6 @@ Editor.defaultConfig = {
 			}
 		]
 	},
-	// style: {
-	// 	definitions: [
-	// 		{
-	// 			name: 'Article category',
-	// 			element: 'h3',
-	// 			classes: [ 'category' ]
-	// 		},
-	// 		{
-	// 			name: 'Info box',
-	// 			element: 'p',
-	// 			classes: [ 'info-box' ]
-	// 		},
-	// 	]
-	// }
 };
 
 export default Editor;
