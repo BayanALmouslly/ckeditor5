@@ -46,6 +46,7 @@ import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
 import { SelectAll } from '@ckeditor/ckeditor5-select-all';
+import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 
 
 class Editor extends ClassicEditor { }
@@ -92,7 +93,8 @@ Editor.builtinPlugins = [
 	Highlight,
 	GeneralHtmlSupport,
 	RemoveFormat,
-	SelectAll
+	SelectAll,
+	PasteFromOffice
 ];
 
 // Editor configuration.
